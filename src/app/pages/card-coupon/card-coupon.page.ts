@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-card-coupon',
@@ -8,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardCouponPage implements OnInit {
 
-  constructor() { }
+
+  public QRCode: string;
+
+  constructor(
+    private navParams: NavParams
+  ) { 
+    //console.log(this.navParams.data["coupons"]);
+    
+  }
 
   ngOnInit() {
+    this.QRCode = JSON.stringify(this.navParams.data["coupons"]);
   }
 
 }

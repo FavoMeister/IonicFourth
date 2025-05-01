@@ -8,12 +8,15 @@ import { CardCouponPageRoutingModule } from './card-coupon-routing.module';
 
 import { CardCouponPage } from './card-coupon.page';
 
+import { QRCodeComponent } from 'angularx-qrcode';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CardCouponPageRoutingModule
+    CardCouponPageRoutingModule,
+    QRCodeComponent
   ],
   declarations: [CardCouponPage]
 })

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Coupons App</string>
+    <string name="title_activity_main">Coupons App</string>
+    <string name="package_name">io.ionic.coupons</string>
+    <string name="custom_url_scheme">io.ionic.coupons</string>
+</resources>
